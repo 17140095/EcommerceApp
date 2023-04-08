@@ -1,0 +1,77 @@
+
+const Products = [
+    {
+        _id: "1",
+        name: "Velcro Ballerians",
+        image: "https://www.freepnglogos.com/uploads/shoes-png/dance-shoes-png-transparent-dance-shoes-images-5.png",
+        description: "Enim irure amet Lorem ipsum exercitation ea dolor Lorem aute aute. Enim duis sint magna Lorem Lorem ex ullamco in. Exercitation nisi minim minim ex eu sit officia culpa commodo dolore. Mollit duis quis id nisi in aute exercitation ad minim culpa consequat magna. Nostrud duis labore deserunt reprehenderit in sit esse. Amet exercitation do dolore id officia Lorem mollit ad tempor.",
+        price: 203,
+        countInStock: 3,
+        rating: 4,
+        numReviews: 4,
+    },
+    {
+        _id: "2",
+        name: "Men Shoes",
+        image: "https://www.pngall.com/wp-content/uploads/5/Men-Shoes-PNG-File.png",
+        description: "Enim irure amet Lorem ipsum exercitation ea dolor Lorem aute aute. Enim duis sint magna Lorem Lorem ex ullamco in. Exercitation nisi minim minim ex eu sit officia culpa commodo dolore. Mollit duis quis id nisi in aute exercitation ad minim culpa consequat magna. Nostrud duis labore deserunt reprehenderit in sit esse. Amet exercitation do dolore id officia Lorem mollit ad tempor.",
+        price: 203,
+        countInStock: 3,
+        rating: 4,
+        numReviews: 4,
+    },
+    {
+        _id: "3",
+        name: "Velcro Elegent",
+        image: "https://www.pngitem.com/pimgs/m/391-3918476_elegant-shoes-png-transparent-png.png",
+        description: "Enim irure amet Lorem ipsum exercitation ea dolor Lorem aute aute. Enim duis sint magna Lorem Lorem ex ullamco in. Exercitation nisi minim minim ex eu sit officia culpa commodo dolore. Mollit duis quis id nisi in aute exercitation ad minim culpa consequat magna. Nostrud duis labore deserunt reprehenderit in sit esse. Amet exercitation do dolore id officia Lorem mollit ad tempor.",
+        price: 203,
+        countInStock: 3,
+        rating: 4,
+        numReviews: 4,
+    },
+    {
+        _id: "4",
+        name: "Black Leather Men",
+        image: "https://pngimg.com/d/men_shoes_PNG7475.png",
+        description: "Enim irure amet Lorem ipsum exercitation ea dolor Lorem aute aute. Enim duis sint magna Lorem Lorem ex ullamco in. Exercitation nisi minim minim ex eu sit officia culpa commodo dolore. Mollit duis quis id nisi in aute exercitation ad minim culpa consequat magna. Nostrud duis labore deserunt reprehenderit in sit esse. Amet exercitation do dolore id officia Lorem mollit ad tempor.",
+        price: 203,
+        countInStock: 3,
+        rating: 4,
+        numReviews: 4,
+    },
+    {
+        _id: "5",
+        name: "Formal Dress Shoe",
+        image: "https://atlas-content-cdn.pixelsquid.com/stock-images/formal-shoes-dress-z0AVO38-600.jpg",
+        description: "Enim irure amet Lorem ipsum exercitation ea dolor Lorem aute aute. Enim duis sint magna Lorem Lorem ex ullamco in. Exercitation nisi minim minim ex eu sit officia culpa commodo dolore. Mollit duis quis id nisi in aute exercitation ad minim culpa consequat magna. Nostrud duis labore deserunt reprehenderit in sit esse. Amet exercitation do dolore id officia Lorem mollit ad tempor.",
+        price: 203,
+        countInStock: 3,
+        rating: 4,
+        numReviews: 4,
+    },
+    {
+        _id: "6",
+        name: "Pure Leather Wing",
+        image: "https://www.pngitem.com/pimgs/m/42-426634_black-shoes-png-transparent-image-black-leather-shoes.png",
+        description: "Enim irure amet Lorem ipsum exercitation ea dolor Lorem aute aute. Enim duis sint magna Lorem Lorem ex ullamco in. Exercitation nisi minim minim ex eu sit officia culpa commodo dolore. Mollit duis quis id nisi in aute exercitation ad minim culpa consequat magna. Nostrud duis labore deserunt reprehenderit in sit esse. Amet exercitation do dolore id officia Lorem mollit ad tempor.",
+        price: 203,
+        countInStock: 3,
+        rating: 4,
+        numReviews: 4,
+    },
+    {
+        _id: "7",
+        name: "Adidas Hiking",
+        image: "https://www.pngmart.com/files/21/Adidas-Shoes-PNG-HD.png",
+        description: "Enim irure amet Lorem ipsum exercitation ea dolor Lorem aute aute. Enim duis sint magna Lorem Lorem ex ullamco in. Exercitation nisi minim minim ex eu sit officia culpa commodo dolore. Mollit duis quis id nisi in aute exercitation ad minim culpa consequat magna. Nostrud duis labore deserunt reprehenderit in sit esse. Amet exercitation do dolore id officia Lorem mollit ad tempor.",
+        price: 34,
+        countInStock: 3,
+        rating: 4,
+        numReviews: 4,
+    },
+    
+
+];
+
+export default Products;
