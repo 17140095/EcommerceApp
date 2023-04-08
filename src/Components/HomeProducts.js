@@ -1,6 +1,7 @@
 import { Text } from 'native-base';
 import { Flex, ScrollView } from 'native-base';
 import Products from '../data/Products'
+import ProductCard from '../Components/ProductCard';
 
 export default function HomeProducts() {
   return (
@@ -8,7 +9,7 @@ export default function HomeProducts() {
       <Flex flexWrap="wrap" direction="row" justifyContent="space-between" px={6}>
         {
             Products.map((product)=>(
-                <Text>{product.name}</Text>
+                <ProductCard product={product}/>
             ))
         }
       </Flex>
