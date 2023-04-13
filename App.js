@@ -1,13 +1,12 @@
-import { NativeBaseProvider,Text, View } from 'native-base';
-import HomeScreen from "./src/Screens/HomeScreen";
+import { NativeBaseProvider, Text, View } from "native-base";
+import CartScreen from "./src/Screens/CartScreen";
 
 export default function App() {
   return (
-    <NativeBaseProvider >
-    <View flex={1}>
-      <HomeScreen />
-    </View>
+    <NativeBaseProvider>
+      <View flex={1}>
+        <CartScreen />
+      </View>
     </NativeBaseProvider>
   );
 }
-
