@@ -1,11 +1,11 @@
 import { NativeBaseProvider, Text, View } from "native-base";
-import PaymentScreen from './src/Screens/PaymentScreen';
+import PlaceOrderScreen from './src/Screens/PlaceOrderScreen';
 
 export default function App() {
   return (
     <NativeBaseProvider>
       <View flex={1}>
-        <PaymentScreen />
+        <PlaceOrderScreen />
       </View>
     </NativeBaseProvider>
   );
