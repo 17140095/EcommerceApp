@@ -8,6 +8,6 @@ const Colors = {
     red: "#FF0000",
     black: "#000000",
     orange: "#FFA500",
-    blue: "#0000FF",
+    blue: "#0096FF",
 };
 export default Colors;

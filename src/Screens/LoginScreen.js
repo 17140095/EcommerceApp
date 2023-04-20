@@ -4,9 +4,10 @@ import Colors from '../Colors/colors';
 
 const LoginScreen = () => {
   return (
-    <Box flex={1}>
+    <Box flex={1} w="full">
       <Image 
         flex={1}
+        w="full"
         alt="Logo"
         source={require('../../assets/images/primary-bg.png')}
       />
