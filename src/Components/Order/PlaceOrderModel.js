@@ -4,6 +4,7 @@ import { useState } from 'react';
 import ButtonCustom from '../Button';
 import Colors from '../../Colors/colors';
 import OrderInfo from './OrderInfo';
+import { useNavigation } from '@react-navigation/native';
 
 const OrderInfos = [
   {
@@ -30,9 +31,8 @@ const OrderInfos = [
 ];
 
 const PlaceOrderModel = () => {
-useState
   const [showModel, setShowModel] = useState(false);
-
+  const navigation = useNavigation();
   return (
     <Center>
       <ButtonCustom onPress={()=>setShowModel(true)} bg={Colors.black} color={Colors.white} mt={5} >SHOW TOTAL</ButtonCustom>
@@ -56,7 +56,10 @@ useState
           </Modal.Body>
           <Modal.Footer>
             <Button flex={1} bg={Colors.primary} _pressed={{bg: Colors.primary}} _text={{color: Colors.white}}
-            onPress={()=>setShowModel(false)}>
+            onPress={()=>{
+              navigation.navigate("Order");
+              setShowModel(false);
+            }}>
               PLACE ORDER
             </Button>
           </Modal.Footer>

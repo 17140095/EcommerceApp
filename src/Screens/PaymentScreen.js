@@ -2,6 +2,7 @@ import { Box, Text, Center, ScrollView, VStack, FormControl, Input, HStack, Imag
 import Colors from '../Colors/colors';
 import ButtonCustom from '../Components/Button';
 import { Ionicons, FontAwesome } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 const PaymentMethods = [
   {
@@ -22,6 +23,7 @@ const PaymentMethods = [
 ]
 
 const PaymentScreen = () => {
+  const navigation = useNavigation();
   return (
     <Box flex={1} bg={Colors.primary} safeAreaTop py={5}>
      <Center pb={15}>
@@ -50,7 +52,7 @@ const PaymentScreen = () => {
           ))
         }
         
-        <ButtonCustom bg={Colors.primary} color={Colors.white} mt={5}>CONTINUE</ButtonCustom>
+        <ButtonCustom bg={Colors.primary} color={Colors.white} mt={5} onPress={()=>navigation.navigate("PlaceOrder")}>CONTINUE</ButtonCustom>
         <Text italic textAlign="center">Payment method is <Text bold>PayPal</Text> by default</Text>
         </VStack>
       </ScrollView>

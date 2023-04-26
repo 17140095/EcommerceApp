@@ -13,31 +13,36 @@ import NumericInput from "react-native-numeric-input";
 import ButtonCustom from "../Components/Button";
 import ProductRating from "../Components/ProductRating";
 import ProductReview from "../Components/ProductReview";
+import { useNavigation } from '@react-navigation/native';
 
-const SingleProductScreen = () => {
+const SingleProductScreen = ({route}) => {
+  const navigation = useNavigation();
+  const product = route.params;
   const [value, setValue] = useState(0);
 
   return (
     <Box safeArea flex={1} bg={Colors.white}>
       <ScrollView px={5} showsVerticalScrollIndicator={false}>
         <Image
-          source={require("../../assets/images/1.png")}
+          source={{uri: product.image}}
           alt="Logo"
           w="full"
           h={300}
         />
         <Heading bold fontSize={15} mb={2} lineHeight={22}>
-          New Adidas Shoes
+          {product.name}
         </Heading>
-        <ProductRating rating={4.5} />
+        <ProductRating rating={product.rating} text={`${product.numReviews} Reviews`}  />
         <HStack space={2} my={5} alignItems="center">
-          <NumericInput
+          {product.countInStock>0 ? (
+            <NumericInput
+            onChange={setValue}
             value={value}
             totalWidth={140}
             totalHeight={30}
             iconSize={25}
             step={1}
-            maxValue={15}
+            maxValue={product.countInStock}
             minValue={1}
             rounded
             textColor={Colors.primary}
@@ -46,19 +51,19 @@ const SingleProductScreen = () => {
             rightButtonBackgroundColor={Colors.primary}
             leftButtonBackgroundColor={Colors.primary}
           />
+          ):(
+            <Heading bold color={Colors.red} fontSize={12}>Out of stock</Heading>
+          )}
+          
           <Spacer />
           <Heading bold fontSize={19} color={Colors.black}>
-            $400
+            ${product.price}
           </Heading>
         </HStack>
         <Text lineHeight={24} fontSize={12}>
-          Occaecat elit labore amet ullamco excepteur pariatur amet laboris ut
-          ullamco. Irure nostrud non aliqua fugiat ex ut id. Tempor irure
-          laborum laborum quis aute. Aute dolore veniam irure aliqua aliquip
-          laboris nostrud Lorem laborum. Qui esse ullamco elit non
-          reprehenderit.
+          {product.description}
         </Text>
-        <ButtonCustom bg={Colors.primary} color={Colors.secondaryLight} mt={10}>
+        <ButtonCustom bg={Colors.primary} color={Colors.secondaryLight} mt={10} onPress={()=>navigation.navigate("Cart")}>
           ADD TO CART
         </ButtonCustom>
         <ProductReview />

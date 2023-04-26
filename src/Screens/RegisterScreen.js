@@ -2,7 +2,7 @@ import {Text, Box, Image, Heading, VStack, HStack, Input, Button,Pressable } fro
 import { Entypo } from '@expo/vector-icons';
 import Colors from '../Colors/colors';
 
-const RegisterScreen = () => {
+const RegisterScreen = ({navigation}) => {
   return (
     <Box flex={1}>
       <Image 
@@ -37,9 +37,7 @@ const RegisterScreen = () => {
           w="40%"
           rounded={50}
           bg={Colors.primary}
-          onPress={()=>{
-            console.log('Sign Up BTN')
-          }}
+          onPress={()=>navigation.navigate("Bottom")}
         >
           Sign Up
         </Button>
@@ -47,9 +45,7 @@ const RegisterScreen = () => {
           <Text>Already have an account?</Text>
         <Pressable
           
-          onPress={()=>{
-            console.log('Login Press')
-          }}
+          onPress={()=>navigation.navigate("Login")}
         >
           <Text color={Colors.primary}>Login</Text>
         </Pressable>

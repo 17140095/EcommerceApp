@@ -2,11 +2,13 @@ import { Box, Text, Pressable, Image, Heading, HStack } from "native-base";
 import Colors from "../Colors/colors";
 import { FontAwesome } from "@expo/vector-icons";
 import ProductRating from "./ProductRating";
+import { useNavigation } from '@react-navigation/native';
+
 
 export default function ProductCard({ product }) {
-  const value = 1;
+  const navigation = useNavigation();
   return (
-    <Pressable w="47%" bg={Colors.white} my={3} p={2} rounded="md">
+    <Pressable w="47%" bg={Colors.white} my={3} p={2} rounded="md" onPress={()=> navigation.navigate("Single", product)}>
       <Image
         alt="Product"
         h={24}

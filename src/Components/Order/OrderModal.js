@@ -3,6 +3,7 @@ import { View, Text, Center, Modal, VStack, HStack, Button, Pressable, Image } f
 import { useState } from 'react';
 import ButtonCustom from '../Button';
 import Colors from '../../Colors/colors';
+import { useNavigation } from '@react-navigation/native';
 
 const OrderInfos = [
   {
@@ -29,7 +30,7 @@ const OrderInfos = [
 ];
 
 const OrderModal = () => {
-useState
+  const navigation = useNavigation();
   const [showModel, setShowModel] = useState(false);
 
   return (
@@ -65,8 +66,11 @@ useState
               />
             </Pressable>
             <Button flex={1} bg={Colors.black} _pressed={{bg: Colors.black}} _text={{color: Colors.white}} mt={3}
-            onPress={()=>setShowModel(false)}>
-              PLACE ORDER
+            onPress={()=>{
+              navigation.navigate("Home");
+              setShowModel(false);
+            }}>
+              PAY LATER
             </Button>
           </Modal.Footer>
         </Modal.Content>

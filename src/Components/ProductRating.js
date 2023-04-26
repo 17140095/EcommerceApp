@@ -1,10 +1,10 @@
-import { HStack } from "native-base";
+import { HStack, Text } from "native-base";
 import { FontAwesome } from "@expo/vector-icons";
 import Colors from "../Colors/colors";
 
-export default function ProductRating({ rating }) {
+export default function ProductRating({ rating, text }) {
   return (
-    <HStack space={0.4} mt={1}>
+    <HStack space={0.4} mt={1} alignItems="center">
       <FontAwesome
         name={rating >= 1 ? "star" : rating >= 0.5 ? "star-half-o" : "star-o"}
         size={8}
@@ -30,6 +30,7 @@ export default function ProductRating({ rating }) {
         size={8}
         color={Colors.orange}
       />
+      <Text pl={2}>{text}</Text>
     </HStack>
   );
 }

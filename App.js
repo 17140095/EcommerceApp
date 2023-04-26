@@ -15,7 +15,7 @@ export default function App() {
       <NavigationContainer >
         <StatusBar hidden={true}/>
         <Stack.Navigator
-         initialRouteName = "Bottom"
+         initialRouteName = "Login"
          screenOptions = {{
           headerShown: false,
          }}
@@ -24,7 +24,7 @@ export default function App() {
           <Stack.Screen name="Register" component={RegisterScreen} />
           <Stack.Screen name="Order" component={OrderScreen} />
           <Stack.Screen name="Bottom" component={BottomNav} />
-          
+        
         </Stack.Navigator>
       </NavigationContainer>
     </NativeBaseProvider>

@@ -8,7 +8,7 @@ const Products = [
     price: 203,
     countInStock: 3,
     rating: 3.6,
-    numReviews: 4,
+    numReviews: 5,
   },
   {
     _id: "2",
@@ -29,7 +29,7 @@ const Products = [
     price: 203,
     countInStock: 3,
     rating: 0,
-    numReviews: 4,
+    numReviews: 14,
   },
   {
     _id: "4",
@@ -37,9 +37,9 @@ const Products = [
     image: "https://pngimg.com/d/men_shoes_PNG7475.png",
     description: "Enim sit officia culpa.",
     price: 203,
-    countInStock: 3,
-    rating: 5,
-    numReviews: 4,
+    countInStock: 0,
+    rating: 0,
+    numReviews: 0,
   },
   {
     _id: "5",
@@ -61,7 +61,7 @@ const Products = [
     price: 203,
     countInStock: 3,
     rating: 1.8,
-    numReviews: 4,
+    numReviews: 2,
   },
   {
     _id: "7",
@@ -69,9 +69,9 @@ const Products = [
     image: "https://www.pngmart.com/files/21/Adidas-Shoes-PNG-HD.png",
     description: "Enim irure x eu sit ore deserunr.",
     price: 34,
-    countInStock: 3,
-    rating: 2.3,
-    numReviews: 4,
+    countInStock: 0,
+    rating: 0,
+    numReviews: 0,
   },
   {
     _id: "8",
@@ -90,7 +90,7 @@ const Products = [
     image: "https://www.pngall.com/wp-content/uploads/5/Men-Shoes-PNG-File.png",
     description: "Enim irureim a. Nostrud duisr.",
     price: 203,
-    countInStock: 3,
+    countInStock: 0,
     rating: 0.5,
     numReviews: 4,
   },
@@ -135,7 +135,7 @@ const Products = [
     price: 203,
     countInStock: 3,
     rating: 1.8,
-    numReviews: 4,
+    numReviews: 6,
   },
   {
     _id: "14",
@@ -145,7 +145,7 @@ const Products = [
     price: 34,
     countInStock: 3,
     rating: 2.3,
-    numReviews: 4,
+    numReviews: 9,
   },
 ];
 
